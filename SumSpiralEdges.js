@@ -11,7 +11,7 @@ function sumSpiral(size) {
     let firstEdge = maxValue - 3 * gapInBetweenCorners;
 
     for (let j = 0; j < numberOfEdges; j++) {
-      current = current + (firstEdge === 0 ? gapInBetweenCorners : firstEdge);
+      current += firstEdge === 0 ? gapInBetweenCorners : firstEdge;
       sum += current;
       firstEdge = 0;
     }
